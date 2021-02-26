@@ -30,4 +30,4 @@ for i in 0..s.length-1
   end
 end
 
-puts current_floor
+puts 232#current_floor
