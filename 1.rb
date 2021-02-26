@@ -17,7 +17,7 @@
 ## Решение:
 
 s = ""
-File.open("data\\1.txt") do |file|
+File.open("data/1.txt") do |file|
   s = file.read()
 end
 

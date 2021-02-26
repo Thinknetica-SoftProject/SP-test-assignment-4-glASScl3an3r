@@ -27,7 +27,7 @@ def get_area(dims)
 end
 
 s = ""
-File.open("data\\4.txt") do |file|
+File.open("data/4.txt") do |file|
   s = file.readlines()
 end
 
