@@ -16,4 +16,23 @@
 #
 ## Решение:
 
+# input: string '*x*x*'
+def get_area(dims)
+  xyz = dims.split('x').map{ |num| num = num.to_i }
+  xy = xyz[0] * xyz[1]
+  yz = xyz[1] * xyz[2]
+  xz = xyz[0] * xyz[2]
 
+  return 2*xy + 2*yz + 2*xz + [xy, yz, xz].min
+end
+
+s = ""
+File.open("data\\4.txt") do |file|
+  s = file.readlines()
+end
+
+answer = 0
+for line in s
+  answer += get_area(line)
+end
+puts answer
