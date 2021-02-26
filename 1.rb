@@ -25,9 +25,9 @@ current_floor = 0
 for i in 0..s.length-1
   if s[i] == '('
     current_floor += 1
-  else
+  elsif s[i] == ')'
     current_floor -= 1
   end
 end
 
-puts 232#current_floor
+puts current_floor
