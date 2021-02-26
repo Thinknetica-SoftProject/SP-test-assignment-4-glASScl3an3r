@@ -26,9 +26,10 @@ for i in 0..s.length-1
   if s[i] == '('
     current_floor += 1
   else
-    if current_floor > 0
-      current_floor -= 1
+    if current_floor == -1 # представим что есть подвал
+      next
     end
+    current_floor -= 1
   end
 end
 
